@@ -2,6 +2,12 @@
 
 This project demonstrates a basic implementation of Create, Read, Update, and Delete operations using .NET Core WebApi and Angular.
 
+## Knowledge
+- MVC Pattern of RESTful API
+- RDBMS (SQLite)
+- IUnitOfWork, DTO, Seeding, Error Handling
+- Pagination
+
 ## Getting Started
 
 To get started with the project, follow these steps:
