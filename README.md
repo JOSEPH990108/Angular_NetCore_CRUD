@@ -16,7 +16,7 @@ To get started with the project, follow these steps:
 
 - [.NET Core SDK](https://dotnet.microsoft.com/download) (Make sure to verify installation by running `dotnet --version` after installation)
 - [Node.js](https://nodejs.org/) (Includes npm)
-- [Angular CLI](https://angular.io/cli) (Install globally using `npm install -g @angular/cli`) & Angular Development Server (npm install @angular-devkit/build-angular)
+- [Angular CLI](https://angular.io/cli) (Install globally using `npm install -g @angular/cli`) & Angular Development Server (`npm install @angular-devkit/build-angular`)
 
 
 ### Installation
