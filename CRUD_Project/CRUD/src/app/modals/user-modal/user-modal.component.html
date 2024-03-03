@@ -1,0 +1,61 @@
+
+<form [formGroup]="modalForm" (ngSubmit)="submitForm(editData? data.userId : null)">
+    <h1 mat-dialog-title>{{ editData ? 'UPDATE '+ editData.username.toUpperCase() : 'CREATE USER' }}</h1>
+    <div mat-dialog-content>
+        <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input matInput formControlName="username" required placeholder="Please fill in username">
+            <mat-error *ngIf="modalForm.get('username')?.invalid">
+                <span>Username is required.</span>
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Mail</mat-label>
+            <input matInput formControlName="mail" required placeholder="Please fill in mail" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <mat-error *ngIf="modalForm.get('mail')?.hasError('required')">
+                <span>Mail is required.</span>
+            </mat-error>
+            <mat-error *ngIf="modalForm.get('mail')?.hasError('email') && !isEmailFormat(modalForm.get('mail')?.value)">
+                <span>Invalid email format. Please check your email address.</span>
+            </mat-error>
+        </mat-form-field>        
+        <mat-form-field>
+            <mat-label>Phone Number</mat-label>
+            <input matInput formControlName="phoneNumber" required placeholder="Please fill in phone number with country code (+60)"
+                   pattern="^\+?[0-9]+$">
+            <mat-error *ngIf="modalForm.get('phoneNumber')?.hasError('required')">
+                <span>Phone number is required.</span>
+            </mat-error>
+            <mat-error *ngIf="modalForm.get('phoneNumber')?.hasError('pattern')">
+                <span>Phone number must start with '+' and contain only digits (0-9).</span>
+            </mat-error>
+        </mat-form-field>        
+        <mat-form-field>
+            <mat-label>Hobbies</mat-label>
+            <mat-select formControlName="userHobbies" multiple required >
+                <mat-option *ngFor="let hobby of hobbyList" [value]="hobby.id">
+                {{ hobby.title }}
+            </mat-option>
+            </mat-select>
+            <mat-error *ngIf="modalForm.get('userHobbies')?.invalid">
+                <span>Please select at least one hobby.</span>
+            </mat-error>
+        </mat-form-field> 
+        <mat-form-field>
+            <mat-label>Skillsets</mat-label>
+            <mat-select formControlName="userSkillsets" multiple required>
+                <mat-option *ngFor="let skillset of skillsetList" [value]="skillset.id">
+                {{ skillset.title }}
+            </mat-option>
+            </mat-select>
+            <mat-error *ngIf="modalForm.get('userSkillsets')?.invalid">
+                <span>Please select at least one skillset.</span>
+            </mat-error>
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-raised-button mat-dialog-close color="secondary">CANCEL</button>
+        <button mat-raised-button color="primary">{{ editData ? "UPDATE" : "SAVE"}}</button>
+    </div>
+</form>
+

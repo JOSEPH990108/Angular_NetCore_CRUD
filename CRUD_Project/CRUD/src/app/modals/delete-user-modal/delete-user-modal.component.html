@@ -1,0 +1,10 @@
+<form (ngSubmit)="Delete(data.userId)">
+  <h2 mat-dialog-title>Confirmation</h2>
+  <div mat-dialog-content>
+    <p>Are you sure you want to delete <b><i>{{ data.userName.toUpperCase() }}?</i></b></p>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close color="secondary">Cancel</button>
+    <button mat-raised-button mat-button color="warn">Confirm</button>
+  </div>
+</form>
