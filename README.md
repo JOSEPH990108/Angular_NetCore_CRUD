@@ -24,6 +24,8 @@ To get started with the project, follow these steps:
 
 2. **Open with Visual Studio Code**: Open the entire project folder in Visual Studio Code.
 
+#### You Might Need to Install SQLite Extension in Visual Studio Code to Open & View Database
+
 3. **Open Terminal**: Open two command-line terminals within Visual Studio Code.
 
 ### Setting up the WebApi (CRUDAPI)
