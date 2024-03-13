@@ -39,32 +39,39 @@ To get started with the project, follow these steps:
 ### Setting up the WebApi (CRUDAPI)
 
 1. In the first terminal, navigate to the `CRUDAPI` directory:
-   ```bash
-   cd CRUDAPI
+```
+cd CRUDAPI
+```
    
 2. Add migrations for the database:
-   ```bash
-   dotnet ef migrations add InitialCreate -o Data/Migrations
+```
+dotnet ef migrations add InitialCreate -o Data/Migrations
+```
    
 3. Update the database with the applied migrations:
-   ```bash
-   dotnet ef database update
+```
+dotnet ef database update
+```
    
 4. Seed initial data into the database:
-   ```bash
-   dotnet watch --no-hot-reload
+```
+dotnet watch --no-hot-reload
+```
    
 ### Setting up the Angular Frontend (CRUD)
 1. In the second terminal, navigate to the CRUD directory:
-   ```bash
-   cd CRUD
+```
+cd CRUD
+```
    
 2. Serve the Angular application:
-   ```bash
-   ng serve
+```
+ng serve
+```
    
-### Additional Notes
-If you encounter dotnet or ng command not found errors, make sure you have installed the required SDKs (.NET Core SDK and Node.js) and tools (Angular CLI) as mentioned in the prerequisites.
-For more information on .NET Core and Angular, refer to the official documentation:
-   .NET Core Documentation
-   Angular Documentation
+> [!NOTE]
+> If you encounter dotnet or ng command not found errors, make sure you have installed the required SDKs (.NET Core SDK and Node.js) and tools (Angular CLI) as mentioned in the prerequisites.
+> For more information on .NET Core and Angular, refer to the official documentation:
+>   [.NET Core Documentation](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0)
+> 
+>   [Angular Documentation](https://angular.io/docs)
