@@ -1,12 +1,19 @@
 # Angular_NetCore_CRUD
 
-This project demonstrates a basic implementation of Create, Read, Update, and Delete operations using .NET Core WebApi and Angular.
+This project demonstrates a basic implementation of Create, Read, Update, and Delete operations using .NET Core WebApi and Angular.  (Directory of Freelancer)
 
 ## Knowledge
 - MVC Pattern of RESTful API
 - RDBMS (SQLite)
 - IUnitOfWork, DTO, Seeding, Error Handling
 - Pagination
+
+## System Images
+![Main Page](CRUD_Project/System_Images/Main_Page.png)
+![Add Freelander](CRUD_Project/System_Images/Add_User.png)
+![Update Freelander](CRUD_Project/System_Images/Update_User.png)
+![Delete Freelander](CRUD_Project/System_Images/Delete_User.png)
+![Pagination](CRUD_Project/System_Images/Pagination.png)
 
 ## Getting Started
 
