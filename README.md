@@ -72,6 +72,7 @@ ng serve
 > [!NOTE]
 > If you encounter dotnet or ng command not found errors, make sure you have installed the required SDKs (.NET Core SDK and Node.js) and tools (Angular CLI) as mentioned in the prerequisites.
 > For more information on .NET Core and Angular, refer to the official documentation:
->   [.NET Core Documentation](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0)
 > 
->   [Angular Documentation](https://angular.io/docs)
+>   - [.NET Core Documentation](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0)
+> 
+>   - [Angular Documentation](https://angular.io/docs)
